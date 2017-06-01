@@ -1,0 +1,15 @@
+.menu{
+	color: #FFF;
+	background-color: #4d94ff;
+	text-align: center;
+}
+.menu-item{
+	display: inline-flex;
+}
+.item:after{
+	content: "";
+	padding: 0 20px;
+	color: white;
+}
+
+

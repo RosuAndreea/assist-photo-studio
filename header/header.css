@@ -1,0 +1,14 @@
+.header{
+	background-color: #FF6666;
+  width: auto;
+  text-align: center;
+  padding: 5px;
+}
+#logo{
+	width:7%;
+}
+#header-text{
+	font-size: 18px;
+  color: black;
+  margin-top: auto;
+}

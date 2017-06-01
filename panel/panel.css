@@ -1,0 +1,6 @@
+.panel{
+	width: 90%;
+	margin: auto;
+	border: 1px solid gray;
+	box-shadow:3px 3px 1px 0px rgba(194, 199, 204, 0.25);
+}

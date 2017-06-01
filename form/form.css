@@ -1,0 +1,30 @@
+.input{
+	width: 100%;
+	margin-top: 15px;
+}
+.input-label{
+	width: 40%;
+	float: left;
+	text-align: right;
+	padding: 0 10px;
+}
+.input-field{
+	width: 30%;
+	float: left;
+	height: 30px;
+}
+.input:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.input ::-webkit-input-placeholder{
+	color: grey;
+}
+.input ::-moz-placeholder{
+	color: grey;
+}
+.input :-ms-input-placeholder{
+	color: grey;
+}
+
