@@ -33,3 +33,41 @@ body {
   float: right;
   margin-right: 25px;
 }
+/*Your details page*/
+.about{
+  width: 90%;
+  border-bottom: 1px solid grey;
+  margin:auto;
+  padding-top: 15px;
+}
+.left-side{
+  width: 10%;
+  margin-right: 5px;
+  display: inline-block;
+  color:#b3b3ff;
+}
+.right-side{
+  width: 80%;
+  vertical-align: top;
+  display:inline-block;
+  padding-bottom: 5px;
+}
+ul{
+  list-style: none;
+}
+/*Registration page*/
+.registration{
+  padding-top: 30px;
+}
+.buttons-next{
+  width: 90%;
+  padding-top: 30px;
+  margin: auto;
+
+}
+.btn-left{
+
+}
+.btn-right{
+  float:right;
+}
