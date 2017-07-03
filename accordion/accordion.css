@@ -1,0 +1,42 @@
+.ui-state-default{
+	background: #f6f6f6;;
+	border: 1px solid #DDD;
+	padding: 4px;
+	cursor: pointer;
+	margin: 1px;
+}
+.ui-state-default a{
+    text-decoration: none;
+    color: #454545;
+    font-weight: 100;
+    padding-left: 15px;
+
+}
+.ui-state-active{
+    background: #b3b3ff;
+    color: #FFF;
+    padding: 4px;
+    margin: 0;
+}
+.ui-state-active a{
+  text-decoration: none;
+  color: #FFF;
+}
+.ui-widget-content{
+	border: 1px solid #ddd;
+    background: #fff;
+}
+.accordion{
+	padding: 20px;
+	width: 400px;
+}
+.acc-content{
+	height: 300px;
+}
+.acc-text{
+	padding-left: 20px;
+}
+.acc-btn{
+	float: right;
+	margin-right: 20px;
+}

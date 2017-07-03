@@ -1,0 +1,1 @@
+$('.acc-content').accordion ( {fillSpace: true, collapsible: true});
