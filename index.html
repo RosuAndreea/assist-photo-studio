@@ -17,6 +17,8 @@
 	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.9.2.custom.js">
 	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.9.2.custom.min.js">
 	<link rel="stylesheet" type="text/css" href="accordion/accordion.css">
+		<link rel="stylesheet" type="text/css" href="google-map/google-map.css">
+
 </head>
 <body>
 	<div class="container">
@@ -37,6 +39,9 @@
 		</nav>
 		<div class="panel">
 			<p class="hero-title">Select Photo Studio Office</p>
+			<p class="subtitle">PS are the most trusted baby, child and family portrait photography specialists.</p>
+
+			<p class="subtitle">Booking your photo shoot is very simple. To start, please enter your location below so that we can find your nearest PhotoStudio studio. We can’t wait to give you a photo shoot experience to remember.</p>
 			<div class="accordion">
 				<div class="acc-content">
 					<h3><a href="#">Office 1</a></h3>
@@ -77,9 +82,19 @@
 					</div>
 				</div>
 			</div>
-			
+			<div id="map" style="width:700px;height:400px;"></div>
+
+			<script>
+				function myMap() {
+    			var mapOptions = {
+        	center: new google.maps.LatLng(47.7406537, 26.66581),
+        	zoom: 10,
+        	mapTypeId: google.maps.MapTypeId.HYBRID
+    			}
+				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+				}
+			</script>
 				
-			</div>
 		</div>
 		<div class="panel">
 			<p class="hero-title">Select Photo Stoot</p>
@@ -247,7 +262,8 @@
 		</footer>
 	</div>
 	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
-<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+ 	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> 
 </body>
 </html>
