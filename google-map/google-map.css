@@ -1,12 +1,11 @@
  #map{
-    width: 700px;
-    height: 400px;
-    position: absolute;
-    overflow: hidden;
-    float: right;
-    max-height: 320px;
-    margin-top: -25%;
-    margin-right: 20px;
-    margin-left: 442px;
+   float:right;
+   width: 600px;
+   height: 290px;
 
     }  
+.container-off{
+    width: 85%;
+    margin: auto;
+    min-height: 300px;
+}

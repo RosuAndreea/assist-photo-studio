@@ -37,115 +37,69 @@
 				<li class="item">Confirm</li>
 			</ol>
 		</nav>
-		<div class="panel">
+		<div class="panel" id="office-cont">
 			<p class="hero-title">Select Photo Studio Office</p>
 			<p class="subtitle">PS are the most trusted baby, child and family portrait photography specialists.</p>
 
 			<p class="subtitle">Booking your photo shoot is very simple. To start, please enter your location below so that we can find your nearest PhotoStudio studio. We can’t wait to give you a photo shoot experience to remember.</p>
-			<div class="accordion">
-				<div class="acc-content">
-					<h3><a href="#">Office 1</a></h3>
-					<div class="acc-text">
-						<p>Suceava</p>
-						<p>Strada Universitatii</p>
-						<p>0230445789</p>
-						<span class="acc-btn">
-							<button class="button">Select</button>
-						</span>
-					</div>
-					<h3><a href="#">Office 2</a></h3>
-					<div class="acc-text">
-						<p>Iasi</p>
-						<p>Strada Vasile Alecsandri</p>
-						<p>0230445789</p>
-						<span class="acc-btn">
-							<button class="button">Select</button>
-						</span>
-					</div>
-					<h3><a href="#">Office 3</a></h3>
-					<div class="acc-text">
-						<p>Botosani</p>
-						<p>Strada Nicolae Iorga</p>
-						<p>0230445789</p>
-						<span class="acc-btn">
-							<button class="button">Select</button>
-						</span>
-					</div>
-					<h3><a href="#">Office 4</a></h3>
-					<div class="acc-text">
-						<p>Cluj Napoca</p>
-						<p>Aleea Herculane</p>
-						<p>0230445789</p>
-						<span class="acc-btn">
-							<button class="button">Select</button>
-						</span>
+			<div class="container-off">
+				<div class="accordion">
+					<div class="acc-content">
+						<h3 id="map-acc-a"><a href="#">Office 1</a></h3>
+						<div class="acc-text">
+							<p>Suceava</p>
+							<p>Strada Universitatii</p>
+							<p>0230445789</p>
+							<span class="acc-btn">
+								<button class="button">Select</button>
+							</span>
+						</div>
+						<h3 id="map-acc-b"><a href="#">Office 2</a></h3>
+						<div class="acc-text">
+							<p>Iasi</p>
+							<p>Strada Vasile Alecsandri</p>
+							<p>0230445789</p>
+							<span class="acc-btn">
+								<button class="button">Select</button>
+							</span>
+						</div>
+						<h3 id="map-acc-c"><a href="#">Office 3</a></h3>
+						<div class="acc-text">
+							<p>Botosani</p>
+							<p>Strada Nicolae Iorga</p>
+							<p>0230445789</p>
+							<span class="acc-btn">
+								<button class="button">Select</button>
+							</span>
+						</div>
+						<h3 id="map-acc-d"><a href="#">Office 4</a></h3>
+						<div class="acc-text">
+							<p>Cluj Napoca</p>
+							<p>Aleea Herculane</p>
+							<p>0230445789</p>
+							<span class="acc-btn">
+								<button class="button">Select</button>
+							</span>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div id="map" style="width:700px;height:400px;"></div>
+				<div id="map"></div>
 
-			<script>
-				function myMap() {
-    			var mapOptions = {
-        	center: new google.maps.LatLng(47.7406537, 26.66581),
-        	zoom: 10,
-        	mapTypeId: google.maps.MapTypeId.HYBRID
-    			}
-				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-				}
-			</script>
+
 				
+			</div>
 		</div>
-		<div class="panel">
+		<div class="services" id="services-panel">
 			<p class="hero-title">Select Photo Stoot</p>
 			<p class="hero-subtitle">At PhotoStudio we pride ourselves in offering a fun and exciting photography experience and with a variety of photo shoots to choose from, there is something for everyone.</p>
 			<p class="hero-subtitle">We have the expertise to get the best result so book today and let us capture those magical moments in time, forever.</p>
-			<div class="panel">
-				<p class="service-title">Clasic Photo Shoot</p>
-				<p class="service-title">Price:10$</p>
-				<div class="detail-service">
-					<img src="img/baby1.jpg" class="photo">
-					<p class="right-detail">Mauris gravida nisl vel iaculis congue. Morbi malesuada, nisi a feugiat volutpat, neque arcu viverra dolor, vel bibendum lorem erat in nisi. Praesent id tortor scelerisque, scelerisque augue vitae, elementum nibh. Morbi tincidunt pharetra sem, at aliquet diam interdum ac. Donec tempus malesuada ipsum quis vehicula. Mauris dignissim tincidunt neque venenatis sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec massa eget arcu iaculis vulputate. Sed sed magna sodales, malesuada ante sed, finibus massa. In hac habitasse platea dictumst. In a orci ut purus pellentesque aliquet. Aliquam lacinia sed dolor vehicula tempor. Aenean a pulvinar nisl, ut ullamcorper massa. Integer imperdiet ornare sagittis.</p>
-				</div>
-				<div class="btn-select">
-					<button class="button">Select</button>
-				</div>
-			</div>
-			<div class="panel">
-				<p class="service-title">Nature Photo Shoot</p>
-				<p class="service-title">Price:20$</p>
-				<div class="detail-service">
-					<img src="img/nature.jpg" class="photo">
-					<p class="right-detail">Mauris gravida nisl vel iaculis congue. Morbi malesuada, nisi a feugiat volutpat, neque arcu viverra dolor, vel bibendum lorem erat in nisi. Praesent id tortor scelerisque, scelerisque augue vitae, elementum nibh. Morbi tincidunt pharetra sem, at aliquet diam interdum ac. Donec tempus malesuada ipsum quis vehicula. Mauris dignissim tincidunt neque venenatis sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec massa eget arcu iaculis vulputate. Sed sed magna sodales, malesuada ante sed, finibus massa. In hac habitasse platea dictumst. In a orci ut purus pellentesque aliquet. Aliquam lacinia sed dolor vehicula tempor. Aenean a pulvinar nisl, ut ullamcorper massa. Integer imperdiet ornare sagittis.</p>
-				</div>
-				<div class="btn-select">
-					<button class="button">Select</button>
-				</div>
-			</div>
-			<div class="panel">
-				<p class="service-title">Children Photo Shoot</p>
-				<p class="service-title">Price:30$</p>
-				<div class="detail-service">
-					<img src="img/child.jpg" class="photo">
-					<p class="right-detail">Mauris gravida nisl vel iaculis congue. Morbi malesuada, nisi a feugiat volutpat, neque arcu viverra dolor, vel bibendum lorem erat in nisi. Praesent id tortor scelerisque, scelerisque augue vitae, elementum nibh. Morbi tincidunt pharetra sem, at aliquet diam interdum ac. Donec tempus malesuada ipsum quis vehicula. Mauris dignissim tincidunt neque venenatis sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec massa eget arcu iaculis vulputate. Sed sed magna sodales, malesuada ante sed, finibus massa. In hac habitasse platea dictumst. In a orci ut purus pellentesque aliquet. Aliquam lacinia sed dolor vehicula tempor. Aenean a pulvinar nisl, ut ullamcorper massa. Integer imperdiet ornare sagittis.</p>
-				</div>
-				<div class="btn-select">
-					<button class="button">Select</button>
-				</div>
-			</div>
-			<div class="panel">
-				<p class="service-title">Passport Photo Shoot</p>
-				<p class="service-title">Price:10$</p>
-				<div class="detail-service">
-					<img src="img/passport.jpg" class="photo">
-					<p class="right-detail">Mauris gravida nisl vel iaculis congue. Morbi malesuada, nisi a feugiat volutpat, neque arcu viverra dolor, vel bibendum lorem erat in nisi. Praesent id tortor scelerisque, scelerisque augue vitae, elementum nibh. Morbi tincidunt pharetra sem, at aliquet diam interdum ac. Donec tempus malesuada ipsum quis vehicula. Mauris dignissim tincidunt neque venenatis sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec massa eget arcu iaculis vulputate. Sed sed magna sodales, malesuada ante sed, finibus massa. In hac habitasse platea dictumst. In a orci ut purus pellentesque aliquet. Aliquam lacinia sed dolor vehicula tempor. Aenean a pulvinar nisl, ut ullamcorper massa. Integer imperdiet ornare sagittis.</p>
-				</div>
-				<div class="btn-select">
-					<button class="button">Select</button>
-				</div>
-			</div>
+			
+
+
+
+
 		</div>
-		<div class="panel">
+		<div class="panel" id='calendar-cont'>
 			<div class="about">
 				<p class="hero-title">Select data</p>
 				<ul>
@@ -188,74 +142,81 @@
 					</div>
 			</div>
 			</div>
-		<div class="panel">
-			<div class="about">
-				<p class="hero-title">Your details</p>
-				<ul>
-					<li>
-						<span class="left-side">Photo Shoot:</span>
-						<span class="right-side">Unique Newborn Experience</span>
-					</li>
-					<li>
-						<span class="left-side">Description:</span>
-						<span class="right-side">Our Unique Newborn Photo Shoot is suitable for babies up to 6 weeks old, offering an unforgettable experience tailored especially for you and your baby. Lasting approximately 1 hour we will take a wide range of images. You will receive a complimentary dig</span>
-					</li>
-					<li>
-						<span class="left-side">Price:</span>
-						<span class="right-side">£25.00</span>
-					</li>
-					<li>
-						<span class="left-side">Address:</span>
-						<span class="right-side">Mothercare, Copdock Mill Interchange, London Road, Ipswich, IP8 3TT</span>
-					</li>
-					<li>
-						<span class="left-side">Duration:</span>
-						<span class="right-side"> 1 hour</span>
-					</li>
-					<li>
-						<span class="left-side">Date:</span>
-						<span class="right-side">June 5, 2017 1:00 PM</span>
-					</li>
-				</ul>
-			</div>
-			<div class="form">
-				<div class="registration">
-					<p class="hero-title">Registration</p>
-					<div class="input input-inline">
-						<label class="input-label">First Name:</label>
-						<input type="text" name="input" class="input-field">
-					</div>
-					<div class="input input-inline">
-						<label class="input-label">Last Name:</label>
-						<input type="text" name="input" class="input-field">
-					</div>
-					<div class="input input-inline">
-						<label class="input-label">Email:</label>
-						<input type="text" name="input" class="input-field">
-					</div>
-					<div class="input input-inline">
-						<label class="input-label">Phone:</label>
-						<input type="text" name="input" class="input-field">
-					</div>
-					<div class="input input-inline">
-						<label class="input-label">Sex:</label>
-						<select type="text" name="input" class="input-field">
-							<option>Male</option>
-							<option>Female</option>
-						</select> 
-					</div>
+		<div id='details-cont'>
+			<div class="panel">
+				<div class="about">
+					<p class="hero-title">Your details</p>
+					<ul>
+						<li>
+							<span class="left-side">Photo Shoot:</span>
+							<span class="right-side">Unique Newborn Experience</span>
+						</li>
+						<li>
+							<span class="left-side">Description:</span>
+							<span class="right-side">Our Unique Newborn Photo Shoot is suitable for babies up to 6 weeks old, offering an unforgettable experience tailored especially for you and your baby. Lasting approximately 1 hour we will take a wide range of images. You will receive a complimentary dig</span>
+						</li>
+						<li>
+							<span class="left-side">Price:</span>
+							<span class="right-side">£25.00</span>
+						</li>
+						<li>
+							<span class="left-side">Address:</span>
+							<span class="right-side">Mothercare, Copdock Mill Interchange, London Road, Ipswich, IP8 3TT</span>
+						</li>
+						<li>
+							<span class="left-side">Duration:</span>
+							<span class="right-side"> 1 hour</span>
+						</li>
+						<li>
+							<span class="left-side">Date:</span>
+							<span class="right-side">June 5, 2017 1:00 PM</span>
+						</li>
+					</ul>
 				</div>
-				<div class="buttons-next">
-					<span class="btn-left">
-						<button class="button">Back</button>
-					</span>
-					<span class="btn-right">
-						<button class="button">Continue</button>
-					</span>
+				<div class="form">
+					<div class="registration">
+						<p class="hero-title">Registration</p>
+						<div class="input input-inline">
+							<label class="input-label">First Name:</label>
+							<input type="text" name="input" class="input-field">
+						</div>
+						<div class="input input-inline">
+							<label class="input-label">Last Name:</label>
+							<input type="text" name="input" class="input-field">
+						</div>
+						<div class="input input-inline">
+							<label class="input-label">Email:</label>
+							<input type="text" name="input" class="input-field">
+						</div>
+						<div class="input input-inline">
+							<label class="input-label">Phone:</label>
+							<input type="text" name="input" class="input-field">
+						</div>
+						<div class="input input-inline">
+							<label class="input-label">Sex:</label>
+							<select type="text" name="input" class="input-field">
+								<option>Male</option>
+								<option>Female</option>
+							</select> 
+						</div>
+					</div>
+					<div class="buttons-next">
+						<span class="btn-left" id="back">
+							<button class="button">Back</button>
+						</span>
+						<span class="btn-right">
+							<button class="button" id="continue">Continue</button>
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="panel" id="confirm">
+		<p>cbdhsbvcsdbvyisdbuvcisd</p>
+		<p>dcuisdbvhcsdbuvsdj</p>
 
+
+		</div>
 
 		<footer>
 			<p id="footer-text">Booking powerd by bookingbug</p>
@@ -264,6 +225,10 @@
 	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
 	<script type="text/javascript" src="js/ui.js"></script>
- 	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> 
+ 	<script type="text/javascript" src="custom.js"></script>
+ 	<script type="text/javascript" src="js/hide-steps.js"></script>
+ 	<script type="text/javascript" src="js/google-map.js"></script>
+ 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDVhv1cN6SAP_Hsk_hzv8QEb9RfOWWROM&callback=initMap"
+  type="text/javascript"></script>
 </body>
 </html>
