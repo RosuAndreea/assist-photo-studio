@@ -14,8 +14,6 @@
 	<link rel="stylesheet" href="menu/menu.css">
 	<link rel="stylesheet" href="panel/panel.css">
 	<link rel="stylesheet" type="text/css" href="calendar/calendar.css">
-	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.9.2.custom.js">
-	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.9.2.custom.min.js">
 	<link rel="stylesheet" type="text/css" href="accordion/accordion.css">
 		<link rel="stylesheet" type="text/css" href="google-map/google-map.css">
 
@@ -37,69 +35,39 @@
 				<li class="item">Confirm</li>
 			</ol>
 		</nav>
+
+		<!-- Select offices -->
 		<div class="panel" id="office-cont">
 			<p class="hero-title">Select Photo Studio Office</p>
 			<p class="subtitle">PS are the most trusted baby, child and family portrait photography specialists.</p>
 
 			<p class="subtitle">Booking your photo shoot is very simple. To start, please enter your location below so that we can find your nearest PhotoStudio studio. We can’t wait to give you a photo shoot experience to remember.</p>
-			<div class="container-off">
-				<div class="accordion">
-					<div class="acc-content">
-						<h3 id="map-acc-a"><a href="#">Office 1</a></h3>
-						<div class="acc-text">
-							<p>Suceava</p>
-							<p>Strada Universitatii</p>
-							<p>0230445789</p>
-							<span class="acc-btn">
-								<button class="button">Select</button>
-							</span>
-						</div>
-						<h3 id="map-acc-b"><a href="#">Office 2</a></h3>
-						<div class="acc-text">
-							<p>Iasi</p>
-							<p>Strada Vasile Alecsandri</p>
-							<p>0230445789</p>
-							<span class="acc-btn">
-								<button class="button">Select</button>
-							</span>
-						</div>
-						<h3 id="map-acc-c"><a href="#">Office 3</a></h3>
-						<div class="acc-text">
-							<p>Botosani</p>
-							<p>Strada Nicolae Iorga</p>
-							<p>0230445789</p>
-							<span class="acc-btn">
-								<button class="button">Select</button>
-							</span>
-						</div>
-						<h3 id="map-acc-d"><a href="#">Office 4</a></h3>
-						<div class="acc-text">
-							<p>Cluj Napoca</p>
-							<p>Aleea Herculane</p>
-							<p>0230445789</p>
-							<span class="acc-btn">
-								<button class="button">Select</button>
-							</span>
-						</div>
-					</div>
+			<div class="container-off" id="officeAccordion">
+				<div class="accordion" data-role="collapsible-set">
+					
 				</div>
-				<div id="map"></div>
-
-
-				
+				<div id="map"></div>	
 			</div>
 		</div>
-		<div class="services" id="services-panel">
+
+		<!-- Services page -->
+		<div class="services hidden" id="services-panel">
 			<p class="hero-title">Select Photo Stoot</p>
 			<p class="hero-subtitle">At PhotoStudio we pride ourselves in offering a fun and exciting photography experience and with a variety of photo shoots to choose from, there is something for everyone.</p>
 			<p class="hero-subtitle">We have the expertise to get the best result so book today and let us capture those magical moments in time, forever.</p>
 			
 
+		<div id="services_panel"></div>
 
+    <div class="buttons-next">
+      <span class="btn-left" id="back">
+				<button class="button" onclick="servicesBack()">Back</button>
+			</span>
+    </div>
+	</div>
 
-
-		</div>
-		<div class="panel" id='calendar-cont'>
+	<!-- Calendar page -->
+		<div class="panel hidden" id='calendar-cont'>
 			<div class="about">
 				<p class="hero-title">Select data</p>
 				<ul>
@@ -120,12 +88,8 @@
 						<span class="right-side">Mothercare, Copdock Mill Interchange, London Road, Ipswich, IP8 3TT</span>
 					</li>
 					<li>
-						<span class="left-side">Duration:</span>
-						<span class="right-side"> 1 hour</span>
-					</li>
-					<li>
 						<span class="left-side">Date:</span>
-						<span class="right-side">June 5, 2017 1:00 PM</span>
+						<span class="right-side">June 5, 2017 </span>
 					</li>
 				</ul>
 			</div>
@@ -134,15 +98,17 @@
 				</div>
 				<div class="buttons-next">
 						<span class="btn-left">
-							<button class="button">Back</button>
+							<button class="button" onclick="calendarBack()">Back</button>
 						</span>
 						<span class="btn-right">
-							<button class="button">Continue</button>
+							<button class="button" onclick="detailsNext()">Continue</button>
 						</span>
 					</div>
 			</div>
-			</div>
-		<div id='details-cont'>
+		</div>
+
+		<!-- Registration page -->
+		<div id='details-cont' class='hidden'>
 			<div class="panel">
 				<div class="about">
 					<p class="hero-title">Your details</p>
@@ -164,12 +130,8 @@
 							<span class="right-side">Mothercare, Copdock Mill Interchange, London Road, Ipswich, IP8 3TT</span>
 						</li>
 						<li>
-							<span class="left-side">Duration:</span>
-							<span class="right-side"> 1 hour</span>
-						</li>
-						<li>
 							<span class="left-side">Date:</span>
-							<span class="right-side">June 5, 2017 1:00 PM</span>
+							<span class="right-side">June 5, 2017 </span>
 						</li>
 					</ul>
 				</div>
@@ -202,20 +164,17 @@
 					</div>
 					<div class="buttons-next">
 						<span class="btn-left" id="back">
-							<button class="button">Back</button>
+							<button class="button" onclick="timeBack()">Back</button>
 						</span>
 						<span class="btn-right">
-							<button class="button" id="continue">Continue</button>
+							<button class="button" id="continue" onclick="confirmNext()">Continue</button>
 						</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="panel" id="confirm">
-		<p>cbdhsbvcsdbvyisdbuvcisd</p>
-		<p>dcuisdbvhcsdbuvsdj</p>
-
-
+		<div class="panel hidden" id="confirm">
+	
 		</div>
 
 		<footer>
@@ -224,11 +183,11 @@
 	</div>
 	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgdmiOP7pJuWv-plWospEgy-PTZrggZak"></script>
 	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="accordion/offices.js"></script>
+	<script type="text/javascript" src="services-photo/services.js"></script>
  	<script type="text/javascript" src="custom.js"></script>
- 	<script type="text/javascript" src="js/hide-steps.js"></script>
- 	<script type="text/javascript" src="js/google-map.js"></script>
- 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDVhv1cN6SAP_Hsk_hzv8QEb9RfOWWROM&callback=initMap"
-  type="text/javascript"></script>
+ 	
 </body>
 </html>
