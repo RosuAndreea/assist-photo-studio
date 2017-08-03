@@ -20,6 +20,15 @@
 	function confirmNext() {
 		$("#confirm").show();
 		$("#details-cont").hide();
+		var fname = document.getElementById("first-name").value;
+		var lname = document.getElementById("last-name").value;
+		var email = document.getElementById("email").value;
+		var phone = document.getElementById("phone").value;
+		document.getElementById("fname").innerHTML = fname;
+		document.getElementById("lname").innerHTML = lname;
+		document.getElementById("em").innerHTML = email;
+		document.getElementById("ph").innerHTML = phone;
+		document.getElementById("oa").innerHTML =item.address;
 	}
 
 	function render() {
