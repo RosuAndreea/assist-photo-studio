@@ -93,7 +93,13 @@
     $(".services").show();
     $("#office-cont").hide();
     window.renderServices(officeId);
-  }
+  
+    window.offices.find(function(item) {
+        if (item.id == officeId) {
+          window.mySelection.office = item;
+        }
+      });
+    }
 
   window.offices = offices;
   window.renderOffices = renderOffices;

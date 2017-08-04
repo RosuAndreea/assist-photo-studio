@@ -30,9 +30,9 @@
 			<ol class="menu-item">
 				<li class="item">Select office</li>
 				<li class="item">Select Photo Shoot</li>
-				<li class="item">Select data</li>
-				<li class="item">Registration</li>
-				<li class="item">Confirm</li>
+				<li class="item">Select date</li>
+				<li class="item">Your details</li>
+				<li class="item">Confirmation</li>
 			</ol>
 		</nav>
 
@@ -70,27 +70,7 @@
 		<div class="panel hidden" id='calendar-cont'>
 			<div class="about">
 				<p class="hero-title">Select data</p>
-				<ul>
-					<li>
-						<span class="left-side">Photo Shoot:</span>
-						<span class="right-side">Unique Newborn Experience</span>
-					</li>
-					<li>
-						<span class="left-side">Description:</span>
-						<span class="right-side">Our Unique Newborn Photo Shoot is suitable for babies up to 6 weeks old, offering an unforgettable experience tailored especially for you and your baby. Lasting approximately 1 hour we will take a wide range of images. You will receive a complimentary dig</span>
-					</li>
-					<li>
-						<span class="left-side">Price:</span>
-						<span class="right-side">£25.00</span>
-					</li>
-					<li>
-						<span class="left-side">Address:</span>
-						<span class="right-side">Mothercare, Copdock Mill Interchange, London Road, Ipswich, IP8 3TT</span>
-					</li>
-					<li>
-						<span class="left-side">Date:</span>
-						<span class="right-side">June 5, 2017 </span>
-					</li>
+				<ul id="details-list-calendar">
 				</ul>
 			</div>
 			<div class="calendar-container">
@@ -112,27 +92,13 @@
 			<div class="panel">
 				<div class="about">
 					<p class="hero-title">Your details</p>
-					<ul>
-						<li>
-							<span class="left-side">Photo Shoot:</span>
-							<span class="right-side">Unique Newborn Experience</span>
-						</li>
-						<li>
-							<span class="left-side">Description:</span>
-							<span class="right-side">Our Unique Newborn Photo Shoot is suitable for babies up to 6 weeks old, offering an unforgettable experience tailored especially for you and your baby. Lasting approximately 1 hour we will take a wide range of images. You will receive a complimentary dig</span>
-						</li>
-						<li>
-							<span class="left-side">Price:</span>
-							<span class="right-side">£25.00</span>
-						</li>
-						<li>
-							<span class="left-side">Address:</span>
-							<span class="right-side">Mothercare, Copdock Mill Interchange, London Road, Ipswich, IP8 3TT</span>
-						</li>
-						<li>
-							<span class="left-side">Date:</span>
-							<span class="right-side">June 5, 2017 </span>
-						</li>
+					<ul id="details-list-form">
+						
+					</ul>
+				</div>
+				<div >
+					<ul id="details-list-form">
+						
 					</ul>
 				</div>
 				<div class="form">
@@ -174,14 +140,19 @@
 			</div>
 		</div>
 		<div class="panel hidden" id="confirm">
-			<ul>
-				<li>First name: <span id="fname"></span></li>
-				<li>Last name: <span id="lname"></span></li>
-				<li>Email: <span id="em"></span></li>
-				<li>Phone: <span id="ph"></span></li>
-				<li>office address: <span id="oa"></span></li>
+			<p class="hero-title">Confirmation</p>
+			
+			<div class="about">
+				<h3>Booking Sumary</h3>
+				<ul id="details-list-confirmation">
+				</ul>
+			</div>
 
-			</ul>
+			<div class="about about-mydetails">
+				<h3>My details</h3>
+				<ul id="user-details-confirmation">
+				</ul>
+			</div>
 	
 		</div>
 
@@ -195,6 +166,8 @@
 	<script type="text/javascript" src="js/ui.js"></script>
 	<script type="text/javascript" src="accordion/offices.js"></script>
 	<script type="text/javascript" src="services-photo/services.js"></script>
+	<script type="text/javascript" src="calendar/calendar.js"></script>
+	<script type="text/javascript" src="panel/confirmation.js"></script>
  	<script type="text/javascript" src="custom.js"></script>
  	
 </body>
